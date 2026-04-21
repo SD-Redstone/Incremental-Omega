@@ -1,0 +1,29 @@
+* {
+  font-family: 'Chakra Petch', sans-serif;
+}
+:root {
+    --light-blue: rgb(255, 255, 255);
+    --blue: rgb(6, 6, 37);
+}
+.horizontal{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center
+}
+.txt1{
+    font-size: larger;
+}
+body{
+    background-color: var(--blue);
+    margin: 0;
+
+}
+h1{
+    color: var(--light-blue);
+    font-size: 2.25vw;
+}
+hr {
+  border: none;
+  height: 3px;
+  background-color: var(--light-blue)
+}
