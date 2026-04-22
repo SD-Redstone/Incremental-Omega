@@ -1,29 +1,60 @@
-* {
-  font-family: 'Chakra Petch', sans-serif;
-}
 :root {
-    --light-blue: rgb(255, 255, 255);
-    --blue: rgb(6, 6, 37);
+    --white: rgb(255, 255, 255);
+    --blue: rgb(11, 0, 61);
+    --dark-blue: rgb(6, 6, 37);
 }
-.horizontal{
+body{
+    background-color: var(--dark-blue);
+    margin: 0;
+    font-family: 'font :3';
+    color: var(--white); 
+    background-color: var(--dark-blue);
+}
+.h{
     display: flex; 
     flex-direction: row; 
     align-items: center
 }
-.txt1{
-    font-size: larger;
-}
-body{
-    background-color: var(--blue);
-    margin: 0;
-
-}
 h1{
-    color: var(--light-blue);
-    font-size: 2.25vw;
+    font-size: 2.25vmax;
+    margin: .3vmax;
+}
+h2{
+    font-size: 1.75vmax;
+    margin: .3vmax;
 }
 hr {
   border: none;
-  height: 3px;
-  background-color: var(--light-blue)
+  height: 2px;
+  margin-top: 0;
+  margin-bottom: .3vh;
+  background-color: var(--white)
+}
+.c{
+    text-align: center;
+}
+.card {
+    margin: 1vmax;
+    padding: 1.5vmax;
+    padding-top: 1vmax;
+    padding-bottom: 2vmax;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 3px solid var(--white);
+    border-radius: 1vmax;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    background-color: var(--blue);
+}
+.vr{
+    width: 2px; 
+    align-self: stretch; 
+    background-color: var(--white); 
+    margin-left: 1vmax; 
+    margin-right: 1vmax; 
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+.normal{
+    font-weight: normal;
 }
