@@ -3,25 +3,32 @@
     --blue: rgb(11, 0, 61);
     --dark-blue: rgb(6, 6, 37);
 }
-body{
+* {
+    font-family: 'font :3'
+}
+body {
     background-color: var(--dark-blue);
     margin: 0;
     font-family: 'font :3';
     color: var(--white); 
     background-color: var(--dark-blue);
 }
-.h{
-    display: flex; 
-    flex-direction: row; 
-    align-items: center
-}
-h1{
+
+h1 {
     font-size: 2.25vmax;
     margin: .3vmax;
 }
-h2{
+h2 {
     font-size: 1.75vmax;
-    margin: .3vmax;
+    margin: .225vmax;
+}
+h3 {
+    font-size: 1.5vmax;
+    margin: .175vmax;
+}
+p {
+    font-size: 1.2vmax;
+    margin: .1vmax;
 }
 hr {
   border: none;
@@ -30,14 +37,37 @@ hr {
   margin-bottom: .3vh;
   background-color: var(--white)
 }
-.c{
+.button1 {
+    border: 2px solid var(--white);
+    border-radius: .5vmax;
+    color: aliceblue;
+    background-color: var(--dark-blue);
+    margin-left: .4vmax;
+    margin-right: .4vmax;
+}
+.hl {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: left;
+}
+.hc {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+}
+.c {
     text-align: center;
+}
+.cardmargin{
+    margin-top: 1vmax
 }
 .card {
     margin: 1vmax;
     padding: 1.5vmax;
-    padding-top: 1vmax;
-    padding-bottom: 2vmax;
+    padding-top: .5vmax;
+    padding-bottom: .5vmax;
     text-align: left;
     color: inherit;
     text-decoration: none;
@@ -46,7 +76,7 @@ hr {
     transition: color 0.15s ease, border-color 0.15s ease;
     background-color: var(--blue);
 }
-.vr{
+.vr {
     width: 2px; 
     align-self: stretch; 
     background-color: var(--white); 
@@ -55,6 +85,18 @@ hr {
     margin-top: 0; 
     margin-bottom: 0;
 }
-.normal{
+.normal {
     font-weight: normal;
+}
+.childc > * {
+    text-align: center
+}
+.allchildc * {
+    text-align: center
+}
+.hidden{
+    display: none
+}
+.card > * {
+    margin: 1vmax;
 }

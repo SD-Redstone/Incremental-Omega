@@ -18,21 +18,30 @@
                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
             }
         </style>
+        <script src="https://cdn.jsdelivr.net/npm/break_infinity.js@2.2.0/dist/break_infinity.min.js"></script>
+        <script src="main.js"></script>
     </head>
     <body>
-       <div class="h">
+       <div class="hl">
             <image src="Assets/omega_logo.png" style="width: 5vmax; height: auto; margin: .7%;">
             <h1 style="padding-left: .2vmax;">Incremental Omega</h1> 
             <div class="vr"></div>
-            <h2 id:"currencies" style="margin: .5vmax;">Symbols: 0&alpha; + 0&beta;</h2>
+            <h2 id:"currencies" style="margin: .5vmax;">Symbols: 0<em>&alpha;</em> + 0<em>&beta;</em></h2>
        </div> 
        <hr>
         <div>
-            <h2>Alpha</h2>
-            <h2>You have 0&alpha; (+0/s)</h2>
-            <div class="h">
+            <h2 class="c" style="margin: .5vmax;">Alpha</h2>
+            <h2 class="c">You have <span id="Alpha">0</span><em>&alpha;</em> (+<span id="AlphaRate">0</span>/s)</h2>
+            <div class="hc, c, allchildc">
                 <div class="card">
-                    
+                    <h3>Alpha Generator</h3>
+                    <p>Generates 1<em>&alpha;</em> per second</p>
+                    <p>Cost: <span id="AlphaGenCost">10</span><em>&alpha;</em></p>
+                    <p>Current: <span id="AlphaGen">10</span></p>
+                    <div class="hc" style="margin: 1.5vmax">
+                        <button class="button1" id="BuyAlphaGen"><p>Buy</p></button>
+                        <button class="button1, hidden"><p>Sell</p></button>
+                    </div>
                 </div>
             </div>
         </div>
